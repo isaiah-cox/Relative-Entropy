@@ -93,7 +93,7 @@ with open('relative_entropies.txt', 'w') as file:
         # if the source only has one soft X-ray observation
         try:
             file.write(get_relative_entropy_bor(source, models[0], 'nH')+'\n')
-        # if the source only has one soft X-ray observation
+        # if the source only has chandra and xmm observations
         except:
             file.write(get_relative_entropy_bor(source, models[0], 'nH_cha')+'\n')
             file.write(get_relative_entropy_bor(source, models[0], 'nH_xmm')+'\n')
