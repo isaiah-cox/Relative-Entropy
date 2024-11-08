@@ -1,7 +1,7 @@
 # Relative-Entropy
 This code calculates the relative entropies between prior distributions and the posterior distributions obtained by BXA.
 
-The code's current form was used to calculate the relative entropies in Figure 6 of this paper (link paper). 
+The code's current form was used to calculate the relative entropies in Figure 6 of "Chandra Follow-up Observations of Swift-BAT-selected AGNs III" by Cox+2024. 
 
 Only uniform and loguniform prior distributions are included.
 
