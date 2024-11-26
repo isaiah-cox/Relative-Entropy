@@ -38,7 +38,7 @@ priors_uxclumpy = {
 
 # function to read in the posterior data
 def get_posterior(source,model,param):
-    posterior_data = pd.read_csv(f'/path/to/sources/directory/{source}/output_{model}/posterior.csv')
+    posterior_data = pd.read_csv(f'{source}_{mdoel}_posterior.csv')
     return posterior_data[param]
 
 # function to calculate the relative entropy for a parameter with a loguniform prior distribution
