@@ -58,9 +58,6 @@ def relative_entropy(posterior,a,b):
     x = np.linspace(min(posterior), max(posterior), 1000)
     p = kde(x)
     q = 1/(b-a)
-    plt.plot(x,p)
-    # plt.plot(x,q)
-    plt.show()
     entropy = p * (np.log2(p/q)) * (x[1] - x[0])
     entropy[entropy<0] = 0
     total_entropy = np.sum(entropy)
